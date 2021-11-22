@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Header } from '../components/home'
+import HomePage from '../components/home'
+
 function Home() {
   return (
     <div>
@@ -11,7 +12,7 @@ function Home() {
           key='title'
         />
       </Head>
-      <Header />
+      <HomePage />
     </div>
   )
 }

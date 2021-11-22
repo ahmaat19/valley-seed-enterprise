@@ -13,19 +13,19 @@ const Header = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className='col-md-6 my-auto text-center'>
-          <h1 className='fw-bold display-1 text-primary'>
+        <div className='col-md-6 my-auto text-center text-primary'>
+          <h1 className='fw-bold display-1 '>
             Valleyseed
             <sup className='text-success'>
               <FaSeedling className='fw-light fs-1 mb-5' />
             </sup>
           </h1>
-          <h4 className='fw-light display-3 text-primary'>Enterprise</h4>
+          <h4 className='fw-light display-3'>Enterprise</h4>
           <div className='mt-4'>
             {buttons.map((button, index) => (
               <button
                 key={index}
-                className='btn btn-primary btn-sm shadow-lg m-2 border-0  rounded-pill'
+                className='btn btn-primary btn-sm shadow-lg m-2 border-0 rounded-pill fw-light'
               >
                 {button}
               </button>

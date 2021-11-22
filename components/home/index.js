@@ -1,3 +1,11 @@
 import Header from './Header'
+import About from './About'
 
-export { Header }
+export default function HomePage() {
+  return (
+    <>
+      <Header />
+      <About />
+    </>
+  )
+}
