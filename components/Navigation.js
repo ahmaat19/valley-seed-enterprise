@@ -2,7 +2,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
 const navItems = [
-  { _id: 1, name: 'Who We Are', path: '/#who-we-are' },
+  { _id: 1, name: 'Who We Are', path: '/#about' },
   { _id: 2, name: 'Strategy', path: '/#strategy' },
   { _id: 3, name: 'Approach', path: '/#approach' },
   { _id: 4, name: 'Team', path: '/#team' },

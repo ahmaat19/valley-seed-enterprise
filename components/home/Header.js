@@ -11,7 +11,7 @@ const Header = () => {
   ]
 
   return (
-    <div className='container'>
+    <div className='container my-5'>
       <div className='row'>
         <div className='col-md-6 my-auto text-center text-primary'>
           <h1 className='fw-bold display-1 '>
@@ -40,10 +40,10 @@ const Header = () => {
         </div>
         <div className='col-md-6 my-auto'>
           <Image
-            src='/images/header.png'
+            src='/images/header.jpg'
             alt='header image'
-            width='1000'
-            height='1000'
+            width='500'
+            height='500'
             className='img-fluid'
           />
         </div>

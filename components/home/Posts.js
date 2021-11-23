@@ -1,26 +1,17 @@
-import fs from 'fs'
 import React from 'react'
-import Head from 'next/head'
-import path from 'path'
-import matter from 'gray-matter'
-import { sortByDate } from '../../utils'
+import Image from 'next/image'
 import Link from 'next/link'
 import moment from 'moment'
 
-const Blog = ({ posts }) => {
+const Posts = ({ posts }) => {
   return (
     <div div className='container'>
       <div className='container text-primary mb-5 mt-2'>
-        <Head>
-          <title>Blog News</title>
-          <meta property='og:title' content='Blog News' key='title' />
-        </Head>
         <h3 className='text-center display-6 '>Blog News</h3>
       </div>
 
       <div className='row'>
         {posts &&
-          posts.length > 0 &&
           posts.map((post) => (
             <div key={post.slug} className='col-md-4 col-12'>
               <div className='card border-0 mb-2 shadow-lg'>
@@ -28,9 +19,11 @@ const Blog = ({ posts }) => {
                   <div>
                     <Link href={`/blog/${post.slug}`}>
                       <a>
-                        <img
+                        <Image
                           alt={post.frontmatter.image}
                           src={post.frontmatter.image}
+                          width={300}
+                          height={200}
                           className='card-img-top img-fluid'
                         />
                       </a>
@@ -77,25 +70,4 @@ const Blog = ({ posts }) => {
   )
 }
 
-export default Blog
-
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('posts'))
-  const posts = files.map((filename) => {
-    const slug = filename.replace('.mdx', '')
-    const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
-      'utf-8'
-    )
-    const { data: frontmatter } = matter(markdownWithMeta)
-    return { slug, frontmatter }
-  })
-  const post = [posts.sort(sortByDate)],
-  // console.log(posts);
-  return {
-    props: {
-      p: [posts.sort(sortByDate)],
-      posts: posts,
-    },
-  }
-}
+export default Posts
