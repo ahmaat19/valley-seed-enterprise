@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import moment from 'moment'
 
@@ -19,11 +18,9 @@ const Posts = ({ posts }) => {
                   <div>
                     <Link href={`/blog/${post.slug}`}>
                       <a>
-                        <Image
+                        <img
                           alt={post.frontmatter.image}
                           src={post.frontmatter.image}
-                          width={300}
-                          height={200}
                           className='card-img-top img-fluid'
                         />
                       </a>

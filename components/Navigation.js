@@ -13,10 +13,19 @@ const navItems = [
 
 const Navigation = () => {
   return (
-    <nav className='navbar navbar-expand-md navbar-dark bg-primary sticky-top'>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-primary sticky-top'>
       <div className='container'>
         <Link href='/'>
-          <a className='navbar-brand'>Valleyseed Enterprise</a>
+          <a className='navbar-brand d-flex align-items-center'>
+            <img
+              src='/images/logo.png'
+              alt='logo'
+              width='30'
+              height='30'
+              className='brand-logo'
+            />
+            Valleyseed Enterprise
+          </a>
         </Link>
 
         <button
