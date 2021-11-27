@@ -155,7 +155,7 @@ const About = () => {
         </div>
         <div className='col-md-6 my-auto'>
           <img
-            src='/images/objectives.svg'
+            src='/images/1.jpg'
             alt='objectives image'
             width='500'
             height='500'
@@ -167,11 +167,11 @@ const About = () => {
       <div id='approach' className='row'>
         <div className='col-md-6 my-auto pt-5'>
           <img
-            src='/images/approach.svg'
+            src='/images/2.jpg'
             alt='approach image'
             width='500'
             height='500'
-            className='img-fluid '
+            className='img-fluid  '
           />
         </div>
         <div className='col-md-6 my-auto'>
@@ -202,7 +202,7 @@ const About = () => {
         </div>
         <div className='col-md-6 my-auto'>
           <img
-            src='/images/team.svg'
+            src='/images/3.jpg'
             alt='team image'
             width='500'
             height='500'
@@ -214,7 +214,7 @@ const About = () => {
       <div className='row'>
         <div className='col-md-6 my-auto'>
           <img
-            src='/images/strengths.svg'
+            src='/images/1.jpg'
             alt='strengths image'
             width='500'
             height='500'
