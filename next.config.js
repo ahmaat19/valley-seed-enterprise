@@ -8,5 +8,5 @@ module.exports = {
       'images.unsplash.com',
     ],
   },
-  // eslint: { ignoreDuringBuilds: true },
+  eslint: { ignoreDuringBuilds: true },
 }

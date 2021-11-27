@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
-import { FaPage4, FaPagelines, FaSeedling } from 'react-icons/fa'
+// import Image from 'next/image'
+import { FaPagelines, FaSeedling } from 'react-icons/fa'
 
 const Header = () => {
   const buttons = [
@@ -39,7 +39,7 @@ const Header = () => {
           </div>
         </div>
         <div className='col-md-6 my-auto'>
-          <Image
+          <img
             src='/images/header.jpg'
             alt='header image'
             width='500'

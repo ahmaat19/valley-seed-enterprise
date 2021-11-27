@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {
   FaBullseye,
   FaCheckCircle,
@@ -154,7 +154,7 @@ const About = () => {
           </div>
         </div>
         <div className='col-md-6 my-auto'>
-          <Image
+          <img
             src='/images/objectives.svg'
             alt='objectives image'
             width='500'
@@ -166,7 +166,7 @@ const About = () => {
 
       <div id='approach' className='row'>
         <div className='col-md-6 my-auto pt-5'>
-          <Image
+          <img
             src='/images/approach.svg'
             alt='approach image'
             width='500'
@@ -201,7 +201,7 @@ const About = () => {
           </div>
         </div>
         <div className='col-md-6 my-auto'>
-          <Image
+          <img
             src='/images/team.svg'
             alt='team image'
             width='500'
@@ -213,7 +213,7 @@ const About = () => {
 
       <div className='row'>
         <div className='col-md-6 my-auto'>
-          <Image
+          <img
             src='/images/strengths.svg'
             alt='strengths image'
             width='500'
