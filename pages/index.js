@@ -9,12 +9,8 @@ function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Valley Seed Enterprise</title>
-        <meta
-          property='og:title'
-          content='Valley Seed Enterprise'
-          key='title'
-        />
+        <title>Valleyseed Enterprise</title>
+        <meta property='og:title' content='Valleyseed Enterprise' key='title' />
       </Head>
       <HomePage posts={posts} />
     </div>

@@ -1,11 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {
-  FaEnvelope,
-  FaEnvelopeOpenText,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-} from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 
 const Contact = () => {
   const contactInfo = () => (
@@ -14,8 +9,9 @@ const Contact = () => {
       <address>
         <ul className='list-group list-group-flush'>
           <li className='list-group-item text-primary'>
-            <FaMapMarkerAlt className='mb-1' /> Market Street, Belethawo Town,
-            Gedo Region, Jubbaland State, Somalia
+            <FaMapMarkerAlt className='mb-1' />
+            Agriculture Training Center (ATC), Luuq Town, Gedo Region, Jubbaland
+            State, Somalia
           </li>
           <li className='list-group-item text-primary'>
             <FaPhoneAlt className='mb-1' />

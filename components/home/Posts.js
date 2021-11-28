@@ -14,7 +14,7 @@ const Posts = ({ posts }) => {
           posts.map((post) => (
             <div key={post.slug} className='col-md-4 col-12'>
               <div className='card border-0 mb-2 shadow-lg'>
-                {post.frontmatter && post.frontmatter.image && (
+                {post.frontmatter && post.frontmatter.image !== undefined && (
                   <div>
                     <Link href={`/blog/${post.slug}`}>
                       <a>

@@ -38,15 +38,15 @@ const PostDetails = ({ frontmatter, content }) => {
               <label className='text-muted fst-italic fw-light'>
                 Original published at {frontmatter.author}
               </label>{' '}
-              {frontmatter && frontmatter.image && (
-                <div className='image-wrapper my-3'>
-                  <img
-                    alt={frontmatter.image}
-                    src={frontmatter.image}
-                    className='img-fluid w-100'
-                  />
-                </div>
-              )}
+              {/* {frontmatter && frontmatter.image && ( */}
+              <div className='image-wrapper my-3'>
+                <img
+                  alt={frontmatter.image}
+                  src={frontmatter.image}
+                  className='img-fluid w-100'
+                />
+              </div>
+              {/* )} */}
               <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
             </div>
           </div>
