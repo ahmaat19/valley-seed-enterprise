@@ -45,7 +45,7 @@ const Contact = () => {
         <div className='col-md-6 col-12'>{contactInfo()}</div>
         <div className='col-md-6 col-12'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15921.791916298178!2d41.86695451608044!3d3.9275688617023716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17c26300a6779d8b%3A0x40d0126d88c6c93d!2sBula-hawa!5e0!3m2!1sen!2sso!4v1637994212532!5m2!1sen!2sso'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63697.22720392011!2d42.514084868323806!3d3.79346743824102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17c2ab550fd49a41%3A0x3b5653ef00a6ed17!2sLuuq!5e0!3m2!1sen!2sso!4v1638705765282!5m2!1sen!2sso'
             height='400'
             className='w-100'
             loading='lazy'
